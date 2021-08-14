@@ -1,0 +1,99 @@
+.description__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.descrition__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 147px;
+  margin-top: 80px;
+}
+
+.description__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 30px 22px 26px 44px;
+}
+
+.descrition__contain {
+  background-image: url("../img/frame.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 352px;
+  height: 491px;
+  margin-left: auto;
+}
+
+.descrition__contain::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/statue-white.png");
+  background-repeat: no-repeat;
+  width: 264px;
+  height: 617px;
+  left: 0;
+  top: 170px;
+}
+
+.description__img-text {
+  width: 434px;
+  margin-right: auto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.description__img {
+  width: 436px;
+  height: 291px;
+  position: relative;
+  z-index: 2;
+}
+
+.description__text::before {
+  content: "";
+  position: absolute;
+  background-color: @green;
+  background-repeat: no-repeat;
+  width: 303px;
+  height: 7px;
+  left: 0;
+  top: 290px;
+  transform: rotate(-30deg);
+}
+
+.descrition__wrapper::before {
+  content: "";
+  position: absolute;
+  background-color: @yellow;
+  background-repeat: no-repeat;
+  width: 139px;
+  height: 5px;
+  left: 100px;
+  top: 333px;
+  transform: rotate(-30deg);
+  z-index: 3;
+}
+
+.descrition__wrap {
+  position: relative;
+}
+
+.descrition__wrap::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/statue-black.png");
+  background-repeat: no-repeat;
+  width: 206px;
+  height: 435px;
+  right: 0;
+  top: -117px;
+  z-index: 1;
+}

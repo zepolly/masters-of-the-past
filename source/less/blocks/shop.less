@@ -1,0 +1,59 @@
+.shop {
+  margin-top: 150px;
+  position: relative;
+}
+
+.shop__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shop__list::before {
+  position: absolute;
+  left: 637px;
+  top: 250px;
+  content: "";
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  width: 125px;
+  height: 123px;
+}
+
+.shop__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.shop__img {
+  width: 470px;
+  height: 487px;
+}
+
+.shop__link {
+  display: block;
+  max-width: 86px;
+  padding: 15px 85px;
+  border: 1px solid @black;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.shop__arrows {
+  width: 160px;
+  margin: 36px auto 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop__arrow {
+  list-style: none;
+  border: none;
+  background-color: @white;
+  cursor: pointer;
+}

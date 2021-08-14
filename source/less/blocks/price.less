@@ -1,0 +1,131 @@
+.price {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.price__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price__subtitle {
+  position: absolute;
+  max-width: 171px;
+  left: 180px;
+  top: 160px;
+  transform: rotate(-30deg);
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.price__subtitle::before {
+  content: "";
+  position: absolute;
+  left: -112px;
+  top: -112px;
+  background-image: url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  width: 674px;
+  height: 355px;
+  transform: rotate(30deg);
+}
+
+.price__table-wrap {
+  position: relative;
+}
+
+.price__table {
+  width: 515px;
+  margin: 0 auto;
+}
+
+.price__table::before {
+  content: "";
+  position: absolute;
+  right: 75px;
+  top: 390px;
+  background-image: url("../img/bols.png");
+  background-repeat: no-repeat;
+  width: 263px;
+  height: 279px;
+}
+
+.price__table-title {
+  color: @bard;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  height: 63px;
+}
+
+.price__table-string {
+  height: 63px;
+  position: relative;
+}
+
+.price__table-description {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.price__table-info {
+  position: absolute;
+  top: 20px;
+}
+
+.price__table-info-benefit {
+  height: 65px;
+  color: @grey-dark;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.price__table-info-group {
+  height: 20px;
+  color: @grey-dark;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.price__table-info-excursion {
+  height: 20px;
+  color: @grey-dark;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.price__link {
+  display: block;
+  color: @white;
+  background-color: @bard;
+  width: 308px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  margin-bottom: 100px;
+
+  &:hover {
+    background-color: @red;
+  }
+
+  &:active {
+    background-color: @red-dark;
+  }
+}
